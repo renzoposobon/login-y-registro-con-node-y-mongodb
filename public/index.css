@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.content-card {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.card {
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  border-radius: 22px;
+  transition: all .3s;
+  width: 23%;
+}
+
+.card2 {
+  border-radius: 0;
+  transition: all .2s;
+}
+
+.card2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 0.4em;
+  background-color: #171717;
+  border-radius: 20px;
+  height: 55vh;
+  justify-content: space-evenly;
+}
+
+#heading {
+  text-align: center;
+  margin: 2em;
+  color: rgb(0, 255, 200);
+  font-size: 1.2em;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 25px;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.input-icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: rgb(0, 255, 200);
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: rgb(0, 255, 200);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2.5em;
+  gap: 10px;
+}
+
+.content-button {
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  height: 36px;
+}
+
+.button1 {
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: .4s ease-in-out;
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  color: rgb(0, 0, 0);
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.button1:hover {
+  background-image: linear-gradient(163deg, #00642f 0%, #13034b 100%);
+  color: rgb(0, 255, 200);
+}
+
+.button2 {
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: .4s ease-in-out;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+}
+
+.content-button:hover:nth-child(2) {
+  background-image: linear-gradient(163deg, #00642f 0%, #13034b 100%);
+  color: rgb(0, 255, 200);
+}
+
+
+
+@media (max-width: 450px) {
+  .content-card {
+    width: 84%;
+    margin: 0 8%;
+  }
+  
+  .card, .card2 {
+    width: 100%;
+  }
+  
+  #heading {
+    text-align: center;
+    margin: 2em;
+    color: rgb(0, 255, 200);
+    font-size: 1.5em;
+  }
+  
+  .field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: 25px;
+    padding: 0.6em;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #171717;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  }
+  
+  .input-icon {
+    height: 1.4em;
+    width: 1.4em;
+    fill: rgb(0, 255, 200);
+  }
+  
+  .input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: rgb(0, 255, 200);
+    font-size: 18px;
+  }
+  
+  .content-button {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    height: 40px;
+  }
+  
+  .button1 {
+    font-size: 20px;
+  }
+  
+  .button2 {
+    font-size: 20px;
+  }
+  
+  a {
+    height: 40px;
+    line-height: 40px;
+  }
+}
