@@ -18,10 +18,6 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
   .then(db => console.log("MongoDB database connection established successfully"))
   .catch(err => console.log(err))
 
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/public/index.html');
-});
-
 app.post('/register', (req, res) => {
   const { username, password } = req.body
   const user = new User({username, password})
